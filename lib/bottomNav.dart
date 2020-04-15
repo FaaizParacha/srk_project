@@ -20,7 +20,7 @@ class _BotomNavState extends State<BotomNav> {
   }
 
   List<Widget> _buildScreens() {
-    return [DesignScreens(),Design3(),ScreenDesign2(),Design3(),ScreenDesign2()];
+    return [DesignScreens(),ScreenDesign2(),Design3(),Design3(),ScreenDesign2()];
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
