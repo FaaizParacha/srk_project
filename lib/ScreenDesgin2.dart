@@ -172,20 +172,20 @@ class _ScreenDesign2State extends State<ScreenDesign2> {
                             fontSize: 20.0,
                             fontWeight: FontWeight.w400
                         ),),
-                        SizedBox(
-                          width: 40.0,
-                        ),
-                        OutlineButton.icon(onPressed: (){},
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0)
-                            ),
-                            borderSide: BorderSide(
-                                color: Colors.pink.shade300
-                            ),
-                            icon: FaIcon(FontAwesomeIcons.userPlus,color: Colors.pink.shade300),
-                            label: Text("Ikut saya",style: TextStyle(
-                                color: Colors.pink.shade300
-                            ),))
+                        Padding(
+                          padding: const EdgeInsets.only(right:20.0),
+                          child: OutlineButton.icon(onPressed: (){},
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0)
+                              ),
+                              borderSide: BorderSide(
+                                  color: Colors.pink.shade300
+                              ),
+                              icon: FaIcon(FontAwesomeIcons.userPlus,size:20.0,color: Colors.pink.shade300),
+                              label: Text("Ikut saya",style: TextStyle(
+                                  color: Colors.pink.shade300
+                              ),)),
+                        )
                       ],
                     ),
                     SizedBox(

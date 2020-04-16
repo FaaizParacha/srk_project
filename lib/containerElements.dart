@@ -11,7 +11,7 @@ class containerEleements extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(5.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -19,40 +19,40 @@ class containerEleements extends StatelessWidget {
             radius: 30.0,
             backgroundImage: AssetImage("assets/design.png"),
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 43.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              textBaseline: TextBaseline.alphabetic,
-              children: <Widget>[
-                Text(label1,style: TextStyle(
-                    color: appColor,
-                    fontWeight: FontWeight.w300,
-                    fontSize: 20.0
-                ),),
-                Text("Pengikut (200)",style: TextStyle(
-                    color: Colors.blue.shade800
-                ),),
-                Text(label3,style: TextStyle(
-                    color: appColor,
-                    fontWeight: FontWeight.w300,
-                    fontSize: 20.0
-                ),),
-              ],
-            ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            textBaseline: TextBaseline.alphabetic,
+            children: <Widget>[
+              Text(label1,style: TextStyle(
+                  color: appColor,
+                  fontWeight: FontWeight.w300,
+                  fontSize: 20.0
+              ),),
+              Text("Pengikut (200)",style: TextStyle(
+                  color: Colors.blue.shade800
+              ),),
+              Text(label3,style: TextStyle(
+                  color: appColor,
+                  fontWeight: FontWeight.w300,
+                  fontSize: 20.0
+              ),),
+            ],
           ),
-          OutlineButton.icon(onPressed: (){},
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)
-              ),
-              borderSide: BorderSide(
-                  color: Colors.pink.shade300
-              ),
-              icon: FaIcon(FontAwesomeIcons.userCheck,color: Colors.pink.shade300),
-              label: Text("Ikut saya",style: TextStyle(
-                  color: Colors.pink.shade300
-              ),)),
+          Padding(
+            padding: const EdgeInsets.only(right:25.0),
+            child: OutlineButton.icon(onPressed: (){},
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0)
+                ),
+                borderSide: BorderSide(
+                    color: Colors.pink.shade300
+                ),
+                icon: FaIcon(FontAwesomeIcons.userCheck,size: 20.0,color: Colors.pink.shade300),
+                label: Text("Ikut saya",style: TextStyle(
+                    color: Colors.pink.shade300
+                ),)),
+          ),
         ],
       ),
     );
