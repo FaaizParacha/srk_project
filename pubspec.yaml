@@ -27,6 +27,7 @@ dependencies:
   responsive_container: ^0.0.1
   persistent_bottom_nav_bar: ^1.2.1
   chewie: ^0.9.10
+  responsive_widgets: ^2.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

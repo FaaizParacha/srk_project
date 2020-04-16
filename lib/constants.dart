@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/cupertino.dart';
-Color appColor = Color(0xD75199FF);
+Color appColor = Color(0xFF62AEC5);
 final Color color = Color.fromARGB(255, 255 ,255, 255);
 final TextStyle Appbarstyle = TextStyle(
   color: color,

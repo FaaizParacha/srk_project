@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:srkproject/constants.dart';
-
 class containerEleements extends StatelessWidget {
   containerEleements({this.label1,this.label3});
 
@@ -18,38 +17,41 @@ class containerEleements extends StatelessWidget {
             radius: 30.0,
             backgroundImage: AssetImage("assets/design.png"),
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.baseline,
-            textBaseline: TextBaseline.alphabetic,
-            children: <Widget>[
-              Text(label1,style: TextStyle(
-                color: appColor,
-                fontWeight: FontWeight.w300,
-                fontSize: 20.0
-              ),),
-              Text("Pengikut (200)",style: TextStyle(
-                color: Colors.blue.shade800
-              ),),
-              Text(label3,style: TextStyle(
-                  color: appColor,
-                  fontWeight: FontWeight.w300,
-                  fontSize: 20.0
-              ),),
-            ],
+          Padding(
+            padding: EdgeInsets.only(right: 50.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              textBaseline: TextBaseline.alphabetic,
+              children: <Widget>[
+                Text(label1,style: TextStyle(
+                    color: appColor,
+                    fontWeight: FontWeight.w300,
+                    fontSize: 20.0
+                ),),
+                Text("Pengikut (200)",style: TextStyle(
+                    color: Colors.blue.shade800
+                ),),
+                Text(label3,style: TextStyle(
+                    color: appColor,
+                    fontWeight: FontWeight.w300,
+                    fontSize: 20.0
+                ),),
+              ],
+            ),
           ),
-         SizedBox(width: 120.0,),
-         OutlineButton.icon(onPressed: (){},
-             shape: RoundedRectangleBorder(
-                 borderRadius: BorderRadius.circular(20.0)
-             ),
-             borderSide: BorderSide(
-                 color: Colors.pink.shade300
-             ),
-             icon: Icon(Icons.location_on,color: Colors.pink.shade300),
-             label: Text("Ikut saya",style: TextStyle(
-                 color: Colors.pink.shade300
-             ),))
+          OutlineButton.icon(onPressed: (){},
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0)
+              ),
+              borderSide: BorderSide(
+                  color: Colors.pink.shade300
+              ),
+              icon: Icon(Icons.location_on,color: Colors.pink.shade300),
+              label: Text("Ikut saya",style: TextStyle(
+                  color: Colors.pink.shade300
+              ),)),
+
         ],
       ),
     );
