@@ -12,7 +12,7 @@ class responsiveContainer extends StatelessWidget {
     return ResponsiveContainer(
       child:  Container(
         child: ContainerChild,
-        margin: EdgeInsets.all(12.0),
+        margin: EdgeInsets.all(8.0),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15.0),
             border: Border.all(color: appColor),
