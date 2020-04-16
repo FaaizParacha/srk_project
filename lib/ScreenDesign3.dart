@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_container/responsive_container.dart';
 import 'package:srkproject/responsiveContainer.dart';
 import 'package:srkproject/searchbarWidget.dart';
-
-import 'UIProject.dart';
 import 'constants.dart';
 import 'containerElements.dart';
 
