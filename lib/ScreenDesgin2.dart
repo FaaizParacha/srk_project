@@ -4,7 +4,7 @@ import 'package:responsive_container/responsive_container.dart';
 import 'package:chewie/chewie.dart';
 import 'package:srkproject/constants.dart';
 import 'package:video_player/video_player.dart';
-
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class ScreenDesign2 extends StatefulWidget {
   @override
   _ScreenDesign2State createState() => _ScreenDesign2State();
@@ -173,7 +173,7 @@ class _ScreenDesign2State extends State<ScreenDesign2> {
                             fontWeight: FontWeight.w400
                         ),),
                         SizedBox(
-                          width: 50.0,
+                          width: 40.0,
                         ),
                         OutlineButton.icon(onPressed: (){},
                             shape: RoundedRectangleBorder(
@@ -182,7 +182,7 @@ class _ScreenDesign2State extends State<ScreenDesign2> {
                             borderSide: BorderSide(
                                 color: Colors.pink.shade300
                             ),
-                            icon: Icon(Icons.add_location,color: Colors.pink.shade300),
+                            icon: FaIcon(FontAwesomeIcons.userPlus,color: Colors.pink.shade300),
                             label: Text("Ikut saya",style: TextStyle(
                                 color: Colors.pink.shade300
                             ),))
@@ -204,6 +204,25 @@ class _ScreenDesign2State extends State<ScreenDesign2> {
                         border: Border.all(color: appColor),
                       ),),
                     ),
+                    heightSizedBox,
+                    Center(
+                      child: ResponsiveContainer(
+                        heightPercent: 7.0,
+                        widthPercent: 50.0,
+                        child: OutlineButton(onPressed: (){},
+                            child: Text("Hantar",style: TextStyle(
+                                color: Colors.pink.shade300,
+                              fontSize: 20.0
+                            ),),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25.0)
+                            ),
+                            borderSide: BorderSide(
+                                color: Colors.pink.shade300
+                            ),
+                             ),
+                      ),
+                    )
                   ]
                 )
               ),

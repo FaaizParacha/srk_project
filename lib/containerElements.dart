@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:srkproject/constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 class containerEleements extends StatelessWidget {
   containerEleements({this.label1,this.label3});
 
@@ -18,7 +20,7 @@ class containerEleements extends StatelessWidget {
             backgroundImage: AssetImage("assets/design.png"),
           ),
           Padding(
-            padding: EdgeInsets.only(right: 50.0),
+            padding: EdgeInsets.only(right: 43.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,11 +49,10 @@ class containerEleements extends StatelessWidget {
               borderSide: BorderSide(
                   color: Colors.pink.shade300
               ),
-              icon: Icon(Icons.location_on,color: Colors.pink.shade300),
+              icon: FaIcon(FontAwesomeIcons.userCheck,color: Colors.pink.shade300),
               label: Text("Ikut saya",style: TextStyle(
                   color: Colors.pink.shade300
               ),)),
-
         ],
       ),
     );

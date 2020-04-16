@@ -180,7 +180,7 @@ class _DesignScreensState extends State<DesignScreens> {
                          Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                            children: <Widget>[
-                             Text("Dart: Azyl",style: TextStyle(
+                             Text("Dari: Azyl",style: TextStyle(
                                color: Colors.blue.shade800,
                                fontSize: 15.0,
                              ),),
